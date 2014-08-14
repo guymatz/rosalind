@@ -12,9 +12,4 @@ else:
     print("Problem!!")
     sys.exit(2)
 
-hamm = 0
-for i in range(len(s1)):
-    if s1[i] != s2[i]:
-        hamm += 1
-
-print hamm
+print sum([a != b for a, b in zip(s1, s2)])
